@@ -6,11 +6,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Countries API</title>
   <link rel="stylesheet" href="css/bootstrap5.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <div class="container-xl">
-    <form class="js-search-form p-4" action="https://restcountries.com/#api-endpoints-v2" method="GET">
+    <header>
+      <a href="index.html">
+        <img class="main-logo" src="img/logo.svg" alt="" width="234" height="34">
+      </a>
+    </header>
+
+    <form class="js-search-form py-4" action="https://restcountries.com/#api-endpoints-v2" method="GET">
     <input class="form-control js-search-input  type="text" name="search" placeholder="Search" aria-label="Search" required>
   </form>
 
@@ -18,7 +25,6 @@
     <h2 class="visually-hidden">Countries</h2>
     <span class="js-info-desk"></span>
     <div class="row countries-list">
-
     </div>
   </section>
 
@@ -29,17 +35,17 @@
       <img class="d-block img-fluid w-100" src="" alt="">
       <h3></h3>
       <div class="d-flex align-items-center">
-        <span>Population: </span>
+        <span class="fw-bold">Population: </span>
         <span id="population"></span>
       </div>
 
       <div class="d-flex align-items-center">
-        <span>Region: </span>
+        <span class="fw-bold">Region: </span>
         <span id="region"></span>
       </div>
 
       <div class="d-flex align-items-center">
-        <span>Capital: </span>
+        <span class="fw-bold">Capital: </span>
         <span id="capital"></span>
       </div>
 

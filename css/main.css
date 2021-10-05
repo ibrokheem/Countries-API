@@ -1,0 +1,57 @@
+@font-face{
+  font-family: "Nunito Sans";
+  src: 
+    url("../fonts/NunitoSans-Light.woff2") format("woff2"),
+    url("../fonts/NunitoSans-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face{
+  font-family: "Nunito Sans";
+  src: 
+    url("../fonts/NunitoSans-ExtraBold.woff2") format("woff2"),
+    url("../fonts/NunitoSans-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+*,*::after,*::before{
+  box-sizing: inherit;
+}
+
+body{
+  height: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  background: #F2F2F2;
+  color: #111517;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.main-logo{
+  display: block;
+  width: 234px;
+  height: 34px;
+  opacity: 1;
+}
+
+.main-logo:hover{
+  opacity: 0.8;
+}
+
+.main-logo:active{
+  opacity: 0.6;
+}
