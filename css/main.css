@@ -36,10 +36,7 @@ body{
   color: #111517;
 }
 
-img{
-  width: 100%;
-  height: auto;
-}
+
 
 .main-logo{
   display: block;
@@ -54,4 +51,9 @@ img{
 
 .main-logo:active{
   opacity: 0.6;
+}
+
+.country-img{
+  width: 267px;
+  height: 190px;
 }

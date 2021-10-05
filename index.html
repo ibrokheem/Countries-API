@@ -18,7 +18,7 @@
     </header>
 
     <form class="js-search-form py-4" action="https://restcountries.com/#api-endpoints-v2" method="GET">
-    <input class="form-control js-search-input  type="text" name="search" placeholder="Search" aria-label="Search" required>
+    <input class="form-control js-search-input"  type="text" name="search" placeholder="Search" aria-label="Search" required>
   </form>
 
   <section class="p-4">
@@ -31,22 +31,24 @@
   </div>
 
   <template id="countries-item-template">
-    <div class="col-md-4">
-      <img class="d-block img-fluid w-100" src="" alt="">
-      <h3></h3>
-      <div class="d-flex align-items-center">
-        <span class="fw-bold">Population: </span>
-        <span id="population"></span>
-      </div>
+    <div class="col-md-4 card">
+      <div class="card-body">
+        <img class="country-img d-block img-fluid w-100" src="" alt="" width="267" height="160">
+        <h3></h3>
+        <div class="d-flex align-items-center">
+          <span class="fw-bold">Population: </span>
+          <span id="population"></span>
+        </div>
 
-      <div class="d-flex align-items-center">
-        <span class="fw-bold">Region: </span>
-        <span id="region"></span>
-      </div>
+        <div class="d-flex align-items-center">
+          <span class="fw-bold">Region: </span>
+          <span id="region"></span>
+        </div>
 
-      <div class="d-flex align-items-center">
-        <span class="fw-bold">Capital: </span>
-        <span id="capital"></span>
+        <div class="d-flex align-items-center">
+          <span class="fw-bold">Capital: </span>
+          <span id="capital"></span>
+        </div>
       </div>
 
     </div>
