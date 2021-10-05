@@ -14,6 +14,7 @@ function getJSON(url){
         showCountries(data);
       }else{
         elInfoDesk.textContent = data.message;
+        elCountriesList.innerHTML = null;
         console.log(data.message)
       }
     });
@@ -21,6 +22,7 @@ function getJSON(url){
 
 function showCountries(data){
   elCountriesList.innerHTML = null;
+  elInfoDesk.textContent = null;
   const elCountriesFragment = document.createDocumentFragment();
   data.forEach(country => {
     console.log(country);
